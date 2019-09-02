@@ -1,0 +1,62 @@
+{
+  "name": "lavideo",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "repository": "git@github.com:yoshixmk/lavideo.git",
+  "author": "yoshixmk <pirori67@gmail.com>",
+  "contributors": [
+    "jamashita <jamashita@arachnid.xyz>"
+  ],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp",
+    "start": "pm2-runtime start ecosystem.config.js",
+    "stop": "pm2-runtime stop ecosystem.config.js",
+    "lint": "eslint 'src/**/*.ts{,x}' --fix"
+  },
+  "dependencies": {
+    "@slack/rtm-api": "5.0.2",
+    "chance": "1.0.18",
+    "config": "3.2.2",
+    "js-yaml": "3.13.1",
+    "log4js": "5.0.0",
+    "mysql": "2.17.1",
+    "pg": "7.12.1"
+  },
+  "devDependencies": {
+    "@types/chance": "1.0.5",
+    "@types/config": "0.0.34",
+    "@types/jest": "24.0.17",
+    "@types/mysql": "2.15.6",
+    "@types/node": "12.7.2",
+    "@types/pg": "7.4.14",
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "eslint": "6.1.0",
+    "gulp": "4.0.2",
+    "gulp-nodemon": "2.4.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-typescript": "5.0.1",
+    "jest": "24.8.0",
+    "rimraf": "3.0.0",
+    "ts-jest": "24.0.2",
+    "typescript": "3.5.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/__tests__/.+\\.spec\\.tsx?$",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "json",
+      "node"
+    ],
+    "testURL": "http://localhost"
+  }
+}
