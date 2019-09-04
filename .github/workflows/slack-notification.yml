@@ -1,8 +1,8 @@
 on: push
 name: Slack Notification
 jobs:
-  lint:
-    name: Lint Check
+  build:
+    name: Build Check
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
