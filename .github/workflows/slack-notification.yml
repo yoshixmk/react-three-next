@@ -1,0 +1,17 @@
+workflow "Slack Notification Demo" {
+  resolves = ["Slack Notification"]
+  on = "push"
+}
+
+action "Slack Notification" {
+  uses = "rtCamp/action-slack-notify@master"
+  env = {
+    SLACK_CHANNEL = "lavideo",
+    SLACK_USERNAME = "rtCamp",
+    SLACK_ICON  = "https://github.com/rtCamp.png?size=48",
+    SLACK_COLOR = "#3278BD"
+    SLACK_TITLE = "RUN CI",
+    SLACK_MESSAGE = "Push your code now :rocket:"
+  }
+  secrets = ["https://hooks.slack.com/services/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"]
+}
