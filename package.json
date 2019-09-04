@@ -17,6 +17,8 @@
     "lint": "eslint 'src/**/*.ts{,x}' --fix"
   },
   "dependencies": {
+    "@capacitor/cli": "^1.1.1",
+    "@capacitor/core": "^1.1.1",
     "@slack/rtm-api": "5.0.2",
     "chance": "1.0.18",
     "config": "3.2.2",
