@@ -17,6 +17,7 @@
     "lint": "eslint 'src/**/*.ts{,x}' --fix"
   },
   "dependencies": {
+    "@babel/code-frame": "^7.5.5",
     "@capacitor/cli": "^1.1.1",
     "@capacitor/core": "^1.1.1",
     "@slack/rtm-api": "5.0.2",
