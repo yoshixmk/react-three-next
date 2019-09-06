@@ -14,19 +14,12 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "baseUrl": "./src",
     "types": [
-      "node",
-      "jest"
+      "node"
     ],
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
   "exclude": [
     "dist",
     "node_modules",
