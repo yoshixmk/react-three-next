@@ -780,6 +780,13 @@
   dependencies:
     tslib "^1.9.0"
 
+"@capacitor/core@^1.1.1":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-1.2.0.tgz#4812bae77f48f58023ff197b49fea7940403a0ff"
+  integrity sha512-K6viZ4XjhK6wNnfIGcyfod6nOd2OqIamWkFp6La6Ob5IrWG7Zxa3q1V98X081GvTxMmSeHFwz3ophaGN2IbzCA==
+  dependencies:
+    tslib "^1.9.0"
+
 "@capacitor/ios@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-1.1.1.tgz#db1419114e610b8c60513151f57e6f14e7912bac"
@@ -2993,6 +3000,13 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000980, caniuse-lite@^1.0.30000989:
   version "1.0.30000989"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000989.tgz#b9193e293ccf7e4426c5245134b8f2a56c0ac4b9"
   integrity sha512-vrMcvSuMz16YY6GSVZ0dWDTJP8jqk3iFQ/Aq5iqblPwxSVVZI+zxDyTX0VPqtQsDnfdrBDcsmhgTEOh5R8Lbpw==
+
+capacitor-video-player@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/capacitor-video-player/-/capacitor-video-player-1.1.1.tgz#eb8c98728e72079d450cc1061049a68734da76ae"
+  integrity sha512-Agvlq7T9Qw3lCnE8jsnIAfK1+MuvtjCc7EwXC75C0oLRAeGg6JsQUEhVw/trVkGIqQ3Gb+MAt4vRTY8xO1sGUA==
+  dependencies:
+    "@capacitor/core" "^1.1.1"
 
 capture-exit@^2.0.0:
   version "2.0.0"

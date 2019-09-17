@@ -10,12 +10,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@babel/code-frame": "7.5.5",
@@ -29,6 +26,7 @@
     "@ionic/pwa-elements": "1.4.1",
     "@ionic/vue": "0.0.4",
     "@slack/rtm-api": "5.0.2",
+    "capacitor-video-player": "^1.1.1",
     "chance": "1.0.18",
     "config": "3.2.2",
     "core-js": "2.5.4",
