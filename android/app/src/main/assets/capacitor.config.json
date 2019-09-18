@@ -1,7 +1,7 @@
 {
-  "appId": "com.example.app",
-  "appName": "App",
+  "appId": "com.lavideo.app",
+  "appName": "lavideo",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
-  "webDir": "www"
+  "webDir": "dist"
 }
