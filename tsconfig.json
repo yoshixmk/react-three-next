@@ -1,30 +1,27 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "declaration": false,
     "experimentalDecorators": true,
-    /* Basic Options */
-    "target": "esnext",
-    "module": "commonjs",
     "lib": [
       "dom",
       "esnext"
     ],
-    "jsx": "react",
-
-    /* Strict Type-Checking Options */
-    "strict": true,
-
-    /* Module Resolution Options */
     "moduleResolution": "node",
-    "baseUrl": "./src",
-    "types": [
-      "node"
-    ],
-    "esModuleInterop": true
+    "module": "esnext",
+    "target": "es2017",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "jsxFactory": "h"
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "dist",
     "node_modules",
     "src/**/*.spec.ts"
-  ],
-  "compileOnSave": false
+  ]
 }
