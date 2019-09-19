@@ -1,5 +1,7 @@
 import { h, Component } from '@stencil/core';
 import { CapacitorVideoPlayer } from 'capacitor-video-player';
+import { YoutubePlayerWeb } from 'capacitor-youtube-player';
+import { Plugins, Capacitor } from '@capacitor/core';
 
 @Component({
   tag: 'app-home',
@@ -7,16 +9,33 @@ import { CapacitorVideoPlayer } from 'capacitor-video-player';
 })
 export class AppHome {
 
+  constructor() {
+    this.showYouTubePlayer()
+  }
+
   handleClick(event: UIEvent) {
     console.log('event ',event)
     this.testPlugin();
   }
-  async testPlugin() { 
+
+  async testPlugin() {
     const videoPlayer:any = CapacitorVideoPlayer;
-    const url:string = "https://clips.vorwaerts-gmbh.de/VfE_html5.mp4";
+    const url:string = "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
     const res:any  = await videoPlayer.play({url:url});
     console.log('result of echo ', res)
-     
+  }
+
+  async showYouTubePlayer() {
+    console.log('player init')
+    if (Capacitor.platform === 'web') {
+      const options = {playerId: 'youtube-player', playerSize: {width: 640, height: 360}, videoId: 'wfCcs0vLysk'};
+      await YoutubePlayerWeb.initialize(options);
+    } else { // Native
+      const { YoutubePlayer } = Plugins;
+      const options = {width: 640, height: 360, videoId: 'wfCcs0vLysk'};
+      await YoutubePlayer.initialize(options);
+    }
+    console.log('player init done')
   }
 
   render() {
@@ -36,6 +55,10 @@ export class AppHome {
         </p>
 
         <ion-button onClick={ (event: UIEvent) => this.handleClick(event)}>Test Video Player Plugin</ion-button>
+
+        <ion-item>
+          <div id="youtube-player"></div>
+        </ion-item>
       </ion-content>
     ];
   }

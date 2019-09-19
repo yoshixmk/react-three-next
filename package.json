@@ -27,6 +27,7 @@
     "@ionic/pwa-elements": "1.4.1",
     "@ionic/vue": "0.0.4",
     "capacitor-video-player": "1.1.1",
+    "capacitor-youtube-player": "^1.0.0-alpha.1-17",
     "chance": "1.0.18",
     "config": "3.2.2",
     "core-js": "2.5.4",

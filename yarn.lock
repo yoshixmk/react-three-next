@@ -758,6 +758,13 @@
   dependencies:
     tslib "^1.9.0"
 
+"@capacitor/core@latest":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-1.2.1.tgz#177c26a6d94c6a5b561b3ca63fa88ba50313bfa3"
+  integrity sha512-SHuEaNTZHVPW2mPdxtin7TMWa71p3T+1xwSwR1tgIAIwmCrjhlyNFXq9czQ8btOyYhTG9n9xVgGPi8wZo5Q2vA==
+  dependencies:
+    tslib "^1.9.0"
+
 "@capacitor/ios@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-1.1.1.tgz#db1419114e610b8c60513151f57e6f14e7912bac"
@@ -2725,6 +2732,13 @@ capacitor-video-player@1.1.1:
   integrity sha512-Agvlq7T9Qw3lCnE8jsnIAfK1+MuvtjCc7EwXC75C0oLRAeGg6JsQUEhVw/trVkGIqQ3Gb+MAt4vRTY8xO1sGUA==
   dependencies:
     "@capacitor/core" "^1.1.1"
+
+capacitor-youtube-player@^1.0.0-alpha.1-17:
+  version "1.0.0-alpha.1-17"
+  resolved "https://registry.yarnpkg.com/capacitor-youtube-player/-/capacitor-youtube-player-1.0.0-alpha.1-17.tgz#9e78e3b9fc005fc3fae8af25242c5f0d5550d8fb"
+  integrity sha512-JvqJesrhIlcbCjETKf5veesVLQ9B1sa7j72JaoPif0DeMacyK39HJcxZ5xpteWSdexmYQbV88D3nMXchWnO7mA==
+  dependencies:
+    "@capacitor/core" latest
 
 capture-exit@^2.0.0:
   version "2.0.0"
