@@ -1,7 +1,10 @@
 **/node_modules/*
 **/dist/*
+**/www/*
+!www/favicon.ico
 **/coverage/*
 *.log
 logs/*
 !logs/.gitkeep
 config/production.yml
+.stencil/
