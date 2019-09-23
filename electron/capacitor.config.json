@@ -3,5 +3,5 @@
   "appName": "lavideo",
   "bundledWebRuntime": false,
   "npmClient": "yarn",
-  "webDir": "dist"
+  "webDir": "www"
 }

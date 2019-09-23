@@ -1,1 +1,7 @@
-{}
+{
+  "appId": "com.lavideo.app",
+  "appName": "lavideo",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www"
+}

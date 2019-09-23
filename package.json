@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "dist/"
+    "www/"
   ],
   "scripts": {
     "build": "stencil build",
