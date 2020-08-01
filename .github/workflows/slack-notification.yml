@@ -16,4 +16,4 @@ jobs:
           channel: '#lavideo'
           icon_emoji: ':bear:'
         env:
-          SLACK_WEBHOOK: 'https://hooks.slack.com/services/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'
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
