@@ -13,8 +13,6 @@ const Page = ({ title }) => {
   return (
     <>
       <Box r3f route='/box' />
-      {/* Step 5 - delete Instructions components */}
-      <Instructions />
     </>
   )
 }
